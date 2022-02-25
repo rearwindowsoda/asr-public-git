@@ -1,0 +1,18 @@
+<div id="user-panel-column">
+    <h3>
+        Panel użytkownika
+    </h3>
+    <h4 id="logged-user-greet">Zostałeś pomyślnie zalogowany.</h4>
+    <p>Możesz teraz zapisać swoje punkty do bazy danych i mieć do nich dostęp z innego urządzenia lub pobrać historię wszystkich swoich zapisanych punktów.</p>
+    <button class="function-buttons" id="save-to-db">Zapisz punkty w bazie danych</button>
+    <p id="logged-user-input-message"></p>
+    <p>Uwaga dla pracowników ze zmiany nocnej! Jeżeli zapiszesz punkty dwukrotnie w ciągu jednego dnia, dodasz nowy wpis do bazy danych z tą samą datą.</p>
+     <form method="get" action="/logged/points">
+    <button class="function-buttons" type="submit">Pobierz punkty z bazy danych</button>
+</form>
+    <h4>Wyloguj się:</h4>
+    <form method="get" action="/logged/logout">
+        <button class="function-buttons" type="submit">Kliknij tu, żeby się wylogować</button>
+    </form>
+</div>
+

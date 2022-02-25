@@ -1,0 +1,36 @@
+
+
+<div class="flex-container">
+    <div id="asr-core">
+        <div class="nav-wrapper">
+            <div id="points-status"></div>
+            <div id="points-multiply"></div>
+
+            {{> points-container}}
+
+
+            <div id="value-input">
+                <label id="point-value-input" >
+                    Odejmij punkty:
+                    <input id="subtract-value" type="number" placeholder="0" min="0">
+                    <button class="function-buttons" id="subtract-points">Odejmij punkty</button>
+                </label>
+
+            </div>
+            <div id="reset-button-div">
+                <button class="adding-buttons" id="reset-button">Zresetuj punkty</button>
+            </div>
+
+
+            {{> dev-notes}}
+
+        </div>
+
+
+    </div>
+    {{> logged-user-column}}
+</div>
+{{> footer}}
+<script src="src/scripts/main.js"></script>
+<script src="src/scripts/form-handler.js"></script>
+<link rel="stylesheet" href="main.css">
