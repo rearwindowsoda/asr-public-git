@@ -1,24 +1,26 @@
 {
-  "name": "asrlicznik21",
-  "version": "2.1.0",
-  "description": "Licznik punktów pochodzących z podziału segmentów ASR.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "asr",
-    "psmm"
-  ],
-  "author": "Mateusz Owczarek",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "cookie-parser": "^1.4.6",
-    "date-fns": "^2.28.0",
-    "express": "^4.17.3",
-    "express-handlebars": "^6.0.2",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^4.4.0"
-  }
+	"name": "asrlicznik22",
+	"version": "2.2.0",
+	"description": "Licznik punktów pochodzących z podziału segmentów ASR.",
+	"main": "app.js",
+	"scripts": {
+		"start:dev": "npx nodemon app.js"
+	},
+	"keywords": [
+		"asr",
+		"psmm"
+	],
+	"author": "Mateusz Owczarek",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"cookie-parser": "^1.4.6",
+		"date-fns": "^2.28.0",
+		"express": "^4.17.3",
+		"express-handlebars": "^6.0.2",
+		"jsonwebtoken": "^8.5.1",
+		"method-override": "^3.0.0",
+		"mongodb": "^4.4.0",
+		"uuid": "^8.3.2"
+	}
 }

@@ -1,7 +1,32 @@
-<ul>
-{{#each points}}
-<li>W dniu: {{this.date}} zdobyłeś {{this.points}} punktów na ASR. </li>
-    {{/each}}
-</ul>
+<style>
+	table { border:1px solid #b3adad; border-collapse:collapse;
+	border-spacing:3px; padding:5px; } table th { border:1px solid #b3adad;
+	padding:5px; background: #f0f0f0; color: #313030; } table td { border:1px
+	solid #b3adad; text-align:center; padding:5px; background: #ffffff; color:
+	#313030; }
+</style>
 
-<a href="/logged">Wróć do strony głównej</a>
+	<table>
+		<thead>
+			<tr>
+				<th>Data</th>
+				<th>Liczba punktów</th>
+				<th>Usuń</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each points}}
+				<tr>
+
+					<td>{{this.date}}</td>
+					<td>{{this.points}}</td>
+					<td><form method='POST' action='/logged/{{this.id}}?_method=DELETE'>
+	<input type="submit" value="🗑">
+    </form>
+</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</form>
+<a href='/logged'>Wróć do strony głównej</a>
