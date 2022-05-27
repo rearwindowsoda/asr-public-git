@@ -4,19 +4,13 @@ function play() {
 }
 
 function showPoints() {
-  let localFetch;
   if (
-    localStorage.getItem("all-points") === undefined ||
-    isNaN(
-      Number(localStorage.getItem("all-points")) ||
-        localStorage.getItem("all-points") === null
-    )
+    localStorage.getItem("all-points") === null ||
+    isNaN(Number(localStorage.getItem("all-points")))
   ) {
     localStorage.setItem("all-points", 0);
-    localFetch = "0";
-  } else {
-    localFetch = localStorage.getItem("all-points");
   }
+  let localFetch = localStorage.getItem("all-points");
   const pointsStatus = document.getElementById("points-status");
   const pointsMultiply = document.getElementById("points-multiply");
 
