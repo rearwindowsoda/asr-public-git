@@ -7,7 +7,10 @@ function showPoints() {
   let localFetch;
   if (
     localStorage.getItem("all-points") === undefined ||
-    isNaN(Number(localStorage.getItem("all-points")))
+    isNaN(
+      Number(localStorage.getItem("all-points")) ||
+        localStorage.getItem("all-points") === null
+    )
   ) {
     localStorage.setItem("all-points", 0);
     localFetch = "0";
