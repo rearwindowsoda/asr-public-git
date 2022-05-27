@@ -1,14 +1,15 @@
 
 
-<div class="flex-container">
-    <div id="asr-core">
-        <div class="nav-wrapper">
-            <div id="points-status"></div>
-            <div id="points-multiply"></div>
-
-            {{> points-container}}
-
-
+<div id="wrapper">
+    <div id="user-points__main">
+           
+            <div id="user-points__container"> <h2>Dodaj punkty:</h2>{{> points-container}}</div>
+     
+       <div id="user-points__status">
+           <h2>liczba punktów asr:</h2>
+            <p id="points-status"></p>
+            <h3>liczba punktów po przeliczeniu:</h3>
+            <p id="points-multiply"></p>
             <div id="value-input">
                 <label id="point-value-input" >
                     Odejmij punkty:
@@ -20,17 +21,24 @@
             <div id="reset-button-div">
                 <button class="adding-buttons" id="reset-button">Zresetuj punkty</button>
             </div>
-          {{> forms}}
+ 
+</div>
+<div> {{> forms}}</div>
 
 
-            {{> dev-notes}}
+            
+        
 
+
+           
+
+{{> user-column}}
+ {{> dev-notes}}
         </div>
 
 
     </div>
-{{> user-column}}
-</div>
+
 {{> footer}}
 <script src="src/scripts/main.js"></script>
 <script src="src/scripts/form-handler.js"></script>

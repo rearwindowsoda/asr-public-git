@@ -1,6 +1,6 @@
 {
-	"name": "asrlicznik22",
-	"version": "2.2.0",
+	"name": "asrlicznik23",
+	"version": "2.3.0",
 	"description": "Licznik punktów pochodzących z podziału segmentów ASR.",
 	"main": "app.js",
 	"scripts": {
